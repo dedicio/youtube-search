@@ -1,0 +1,182 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "aFDDSTn6JGoyhCIEwqMeAagjIFw",
+  "nextPageToken": "CAUQAA",
+  "regionCode": "BR",
+  "pageInfo": {
+    "totalResults": 1000000,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "p4R1RoSR2eQwSiAS4qa8EP0X758",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ZfgxGvq4rI8"
+      },
+      "snippet": {
+        "publishedAt": "2025-02-04T18:17:08Z",
+        "channelId": "UCzCutgYFZpBdElMw3krjG0A",
+        "title": "História para o ENEM - Antiguidade ocidental",
+        "description": "Seja membro deste canal e assista todas as lives a hora que quiser: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ZfgxGvq4rI8/default_live.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ZfgxGvq4rI8/mqdefault_live.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ZfgxGvq4rI8/hqdefault_live.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "ProEnem - Enem 2025 ",
+        "liveBroadcastContent": "live",
+        "publishTime": "2025-02-04T18:17:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "a4YnUyncSlvdtsCs44D8d5Ueu0g",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "QTlIH-LTydM"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-03T16:30:06Z",
+        "channelId": "UCpRZYty4rAOjX3PN_N5NyUg",
+        "title": "✅ Como estudar para o ENEM começando do ZERO!",
+        "description": "Descubra os 3 erros e os 3 acertos de quem está estudando para o ENEM sem base, começando por matemática básica.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QTlIH-LTydM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QTlIH-LTydM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QTlIH-LTydM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Método Questiona",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-03T16:30:06Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "IUe7JyvIURWTH0nFCdTs8lmAkME",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "9nVj1TtGkh8"
+      },
+      "snippet": {
+        "publishedAt": "2023-03-27T12:15:00Z",
+        "channelId": "UCQFeYEP52ug66coVlayWGXA",
+        "title": "136º Erro Super Grave Na Redação Do Enem #092 | Profinho |",
+        "description": "Quer aprender mais com o Profinho? ✓ Curso de redação para o ENEM https://profinho.com.br/cursos-do-profinho-yt/ ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/9nVj1TtGkh8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/9nVj1TtGkh8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/9nVj1TtGkh8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Profinho",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-03-27T12:15:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "a6FL12C8hTSrRpEFfgTdxcmOjg8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "kx_r8NXD6GA"
+      },
+      "snippet": {
+        "publishedAt": "2017-07-28T17:27:11Z",
+        "channelId": "UCT0JugAtGmqiYkwxFZOwAtg",
+        "title": "COMO ESCREVER A REDAÇÃO PERFEITA NO ENEM? | QUER QUE DESENHE? | DESCOMPLICA",
+        "description": "JÁ SE LIGA NA NOSSA OFERTA DA BLACK Combo Black 2 em 1: https://bit.ly/411V8R1 Combo Black Smart 5 em 1: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kx_r8NXD6GA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kx_r8NXD6GA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kx_r8NXD6GA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Descomplica",
+        "liveBroadcastContent": "none",
+        "publishTime": "2017-07-28T17:27:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "d_g2tOw7HZyIDp6KF3R5o5JS1_0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "5jq_kcNYzUo"
+      },
+      "snippet": {
+        "publishedAt": "2020-08-31T20:00:01Z",
+        "channelId": "UC_53VGoH_0XLFmYVpGMvhvg",
+        "title": "O QUE É O ENEM? COMO SÃO AS PROVAS? O QUE ESTUDAR? | Explicando do Zero",
+        "description": "Curso Enem Gratuito: https://goo.gl/2rebsa Tudo sobre o Enem: https://bit.ly/32m6Ciw ✔️ Resolva nossos simulados: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5jq_kcNYzUo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5jq_kcNYzUo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5jq_kcNYzUo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Curso Enem Gratuito",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-31T20:00:01Z"
+      }
+    }
+  ]
+}

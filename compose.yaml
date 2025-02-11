@@ -1,0 +1,10 @@
+services:
+  youtube-search:
+    build: .
+    container_name: youtube-search
+    ports:
+      - "3067:5173"
+    volumes:
+      - .:/app
+    environment:
+      - YOUTUBE_API_KEY=${YOUTUBE_API_KEY}
