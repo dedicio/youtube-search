@@ -1,10 +1,12 @@
 import { useState } from 'react';
 
 type SearchInputProps = {
+  disabled?: boolean;
   onSearch: (searchTerm: string) => void;
 }
 
 export function SearchInput({
+  disabled = false,
   onSearch,
 }: SearchInputProps): React.ReactElement {
   const [searchTerm, setSearchTerm] = useState('');
@@ -22,14 +24,22 @@ export function SearchInput({
       <input
         type="text"
         placeholder="Palavra-chave..."
-        className='grow border border-slate-600 rounded-l-md p-2 outline-0'
+        className='
+          grow border border-slate-600 rounded-l-md p-2 outline-0
+          disabled:bg-slate-600 disabled:border-slate-600 disabled:cursor-not-allowed
+        '
         value={searchTerm}
+        disabled={disabled}
         onChange={(event) => setSearchTerm(event.target.value)}
       />
 
       <button
         type="submit"
-        className='bg-rose-700 hover:bg-sky-700 border border-rose-600 text-white p-2 rounded-r-md cursor-pointer'
+        className='
+          bg-rose-700 hover:bg-sky-700 border border-rose-600 text-white p-2 rounded-r-md cursor-pointer
+          disabled:bg-slate-600 disabled:border-slate-600 disabled:cursor-not-allowed
+        '
+        disabled={disabled}
       >
         Buscar
       </button>
