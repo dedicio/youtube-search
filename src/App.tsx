@@ -3,6 +3,7 @@ import './App.css'
 import type { Video } from './types';
 import { SearchInput } from './components/SearchInput'
 import { VideoList } from './components/VideoList';
+import { Loader } from './components/loader/Loader';
 
 const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
 const BASE_URL = 'https://www.googleapis.com/youtube/v3/search';
@@ -14,10 +15,12 @@ function toLocaleDateString(dateString: string): string {
 function App() {
   const [videos, setVideos] = useState<Video[]>([]);
   const [pageToken, setPageToken] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const hasVideos = videos.length > 0;
 
   const onSearch = async (searchTerm: string) => {
+    setIsLoading(true);
     let apiUrl = `${BASE_URL}?part=snippet&q=${searchTerm}&type=video&key=${API_KEY}&maxResults=10`;
 
     if (pageToken) {
@@ -25,8 +28,10 @@ function App() {
     }
     const response = await fetch(apiUrl);
     const data = await response.json();
+    setIsLoading(false);
 
     if (response.ok) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       setVideos(data.items.map((item: any) => ({
         id: item.id.videoId,
         title: item.snippet.title,
@@ -35,6 +40,8 @@ function App() {
         channel: item.snippet.channelTitle,
         publishedAt: toLocaleDateString(item.snippet.publishedAt),
       })));
+
+      setPageToken(data.nextPageToken);
     }
   }
 
@@ -43,12 +50,22 @@ function App() {
 
       <h1 className='text-2xl mb-4 text-center'>Youtube Search</h1>
 
-      <SearchInput onSearch={onSearch} />
+      <SearchInput
+        disabled={isLoading}
+        onSearch={onSearch}
+      />
+
+      {
+        isLoading &&
+        <div className='flex justify-center'>
+          <Loader />
+        </div>
+      }
 
       <section className=''>
         {
           hasVideos &&
-          <h2>Resultados da busca</h2>
+          <h2 className='text-xl mt-6 mb-2'>Resultados da busca</h2>
         }
 
         <VideoList videos={videos} />
