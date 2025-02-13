@@ -25,7 +25,7 @@ function App() {
     setIsLoading(true);
     setSearchTerm(searchTerm);
 
-    let apiUrl = `${BASE_URL}?part=snippet&q=${searchTerm}&type=video&key=${API_KEY}&maxResults=10`;
+    let apiUrl = `${BASE_URL}?part=snippet&q=${searchTerm}&type=video&key=${API_KEY}&maxResults=12`;
 
     if (nextPageToken) {
       apiUrl += `&pageToken=${nextPageToken}`;
@@ -64,7 +64,7 @@ function App() {
   }
 
   return (
-    <main className='p-4 bg-slate-900 text-white min-h-screen'>
+    <main className='p-4 text-white min-h-screen w-full max-w-5xl'>
 
       <h1 className='flex justify-center items-center gap-2 text-2xl mt-2 mb-6'>
         <Icon size={24} />
