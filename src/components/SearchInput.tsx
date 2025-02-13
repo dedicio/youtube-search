@@ -36,7 +36,7 @@ export function SearchInput({
       <button
         type="submit"
         className='
-          bg-rose-700 hover:bg-sky-700 border border-rose-600 text-white p-2 rounded-r-md cursor-pointer
+          bg-rose-700 hover:bg-rose-800 border border-rose-600 text-white p-2 rounded-r-md cursor-pointer
           disabled:bg-slate-600 disabled:border-slate-600 disabled:cursor-not-allowed
         '
         disabled={disabled}
