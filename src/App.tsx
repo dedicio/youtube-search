@@ -21,11 +21,16 @@ function App() {
 
   const hasVideos = videos.length > 0;
 
-  const onSearch = async (searchTerm: string) => {
+  const onSearch = async (searchTerm: string, clear: boolean = true) => {
     setIsLoading(true);
     setSearchTerm(searchTerm);
 
-    let apiUrl = `${BASE_URL}?part=snippet&q=${searchTerm}&type=video&key=${API_KEY}&maxResults=12`;
+    if (clear) {
+      setVideos([]);
+      setNextPageToken('');
+    }
+
+    let apiUrl = `${BASE_URL}?part=snippet&q=${searchTerm}&type=video&key=${API_KEY}&maxResults=12&regionCode=BR`;
 
     if (nextPageToken) {
       apiUrl += `&pageToken=${nextPageToken}`;
@@ -60,7 +65,7 @@ function App() {
   }
 
   const onPaginate = () => {
-    onSearch(searchTerm);
+    onSearch(searchTerm, false);
   }
 
   return (

@@ -2,6 +2,7 @@ services:
   youtube-search:
     build: .
     container_name: youtube-search
+    restart: unless-stopped
     ports:
       - "3067:80"
     environment:
